@@ -1,4 +1,3 @@
-# .github/workflows/release-czyz-folder.yml
 name: Release ASDF on Tag
 
 on:
@@ -29,7 +28,7 @@ jobs:
         with:
           artifacts: asdf-${{ github.ref_name }}.zip
           artifactContentType: application/zip
-          generateReleaseNotes: true
+#          generateReleaseNotes: true
           draft: false
           prerelease: true
           artifactErrorsFailBuild: true
